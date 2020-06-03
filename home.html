@@ -1,0 +1,152 @@
+<html>
+<head>
+<title> Alzentia </title>
+<link rel="stylesheet" type="text/CSS" href="{{ url_for('static',filename='homeStylesheet.css') }}">
+</head>
+<body>
+    <ol>
+        <li><a class="active" href="/home"> Alzentia </a></li>
+        <li><a href="/home#sym"> Symptoms </a></li>
+        <li><a href="/home#cau"> Causes </a></li>
+        <li><a href="/home#diag"> Diagnosis </a></li>
+        <li><a href="/home#care"> Treatment </a></li>
+        <li><a href="/home#risk"> Prevention </a></li>
+        <li><a href="/test"> Dementia Predictor </a></li>
+      </ol>
+
+      <div id="display" class="col-md-8">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+            {% for message in messages %}
+            <div class="col-md-8">
+                <br/>
+                <h3 style="color : white;">{{ message }}</h3><br/>
+                <hr style="height:2px;border-width:0;color:white;background-color:white">
+            </div>
+            {% endfor %}
+         {% endif %}
+        {% endwith %}          
+    </div>
+
+    <div class="Title">
+        <div id = "intro">
+            Alzentia
+        </div>
+        <br>
+        <h1>All About Dementia.</h1>
+    </div>
+    <br>
+        <p>
+        Dementia is an overall term for diseases and conditions characterized by a decline in memory, language, problem-solving
+        and other thinking skills
+     that affect a person's ability to perform everyday activities.<br>
+        Memory loss is an example. Alzheimer's is the most common cause of dementia.
+        </p>
+        <br>
+        <hr style="height:2px;border-width:0;color:white;background-color:white">
+        <br>
+        <h1>What is Dementia?</h1>
+        <br>
+            <p>
+        Dementia is not a single disease; it’s an overall term — like heart disease — that covers a wide range of specific medical conditions, 
+        including Alzheimer’s disease.
+        Disorders grouped under the general term “dementia” are caused by abnormal brain changes. These changes trigger a decline in thinking skills, also known as cognitive abilities, severe enough to impair daily life and independent function. <br>
+        They also affect behavior, feelings and relationships.
+        </p>
+        <p> Alzheimer's disease accounts for 60-80% of cases. Vascular dementia, which occurs because of microscopic bleeding and blood vessel blockage in the brain, is the second most common cause of dementia.<br>
+             But there are many other conditions that can cause symptoms of dementia, including some that are reversible, such as thyroid problems and vitamin deficiencies.
+        <br>Dementia is often incorrectly referred to as "senility" or "senile dementia," which reflects the formerly widespread but incorrect belief that serious mental decline is a normal part of aging.
+    </p>
+    <hr style="height:2px;border-width:0;color:white;background-color:white">
+    <div id="sym">
+    <br>
+        <h1>Memory Loss and Other Symptoms of Dementia</h1>
+        <br>
+            <p>
+            Symptoms of dementia can vary greatly. Examples include:</p>
+            <ul type ='square'>
+            <li>Problems with short-term memory.</li>
+            <li>Keeping track of a purse or wallet.</li>
+            <li>Paying bills.</li>
+            <li>Planning and preparing meals.</li>
+            <li>Remembering appointments.</li>
+            <li>Traveling out of the neighborhood.</li>
+        </ul>
+            <p>Many dementias are progressive, meaning symptoms start out slowly and gradually get worse. If you or someone you know is experiencing memory difficulties or other changes in thinking skills, don't ignore them. See a doctor soon to determine the cause. Professional evaluation may detect a treatable condition. And even if symptoms suggest dementia, early diagnosis allows a person to get the maximum benefit from available treatments and provides an opportunity to volunteer for clinical trials or studies. It also provides time to plan for the future.
+            </p>
+            <hr style="height:2px;border-width:0;color:white;background-color:white">
+        </div>
+        <div id="cau">
+        <br>
+        <h1>Causes</h1>
+        <br>
+           <p>
+            Dementia is caused by damage to brain cells. This damage interferes with the ability of brain cells to communicate with each other. When brain cells cannot communicate normally, thinking, behavior and feelings can be affected.
+            
+            The brain has many distinct regions, each of which is responsible for different functions (for example, memory, judgment and movement). When cells in a particular region are damaged, that region cannot carry out its functions normally.
+            
+            
+            Understanding Alzheimer's and Dementia outlines the difference between Alzheimer's and dementia, symptoms, stages, risk factors and more.
+            Different types of dementia are associated with particular types of brain cell damage in particular regions of the brain. For example, in Alzheimer's disease, high levels of certain proteins inside and outside brain cells make it hard for brain cells to stay healthy and to communicate with each other. The brain region called the hippocampus is the center of learning and memory in the brain, and the brain cells in this region are often the first to be damaged. That's why memory loss is often one of the earliest symptoms of Alzheimer's.  
+        </p>
+            <p>
+          
+            While most changes in the brain that cause dementia are permanent and worsen over time, thinking and memory problems caused by the following conditions may improve when the condition is treated or addressed:
+            </p>
+            <ul type ='square'>
+                <li> Depression.</li>
+                <li>Medication side effects.</li>
+                <li>Excess use of alcohol..</li>
+                <li> Thyroid problems.</li>
+                <li>Vitamin deficiencies.</li>
+                </ul>
+           <br>
+           <hr style="height:2px;border-width:0;color:white;background-color:white">
+        </div>
+        <div id="diag">
+        <br>
+            <h1>
+            Diagnosis of dementia</h1><br>
+            <p>
+            There is no one test to determine if someone has dementia. Doctors diagnose Alzheimer's and other types of dementia based on a careful medical history, a physical examination, laboratory tests, and the characteristic changes in thinking, day-to-day function and behavior associated with each type. Doctors can determine that a person has dementia with a high level of certainty. But it's harder to determine the exact type of dementia because the symptoms and brain changes of different dementias can overlap. In some cases, a doctor may diagnose "dementia" and not specify a type. If this occurs it may be necessary to see a specialist such as a neurologist or gero-psychologist.
+        </p>
+        <br>
+           <hr style="height:2px;border-width:0;color:white;background-color:white">
+        </div>
+        <div id="care">
+        <br>
+           
+           <h1>Dementia treatment and care</h1><br>
+           <p>
+Treatment of dementia depends on its cause. In the case of most progressive dementias, including Alzheimer's disease, there is no cure and no treatment that slows or stops its progression. But there are drug treatments that may temporarily improve symptoms. The same medications used to treat Alzheimer's are among the drugs sometimes prescribed to help with symptoms of other types of dementias. Non-drug therapies can also alleviate some symptoms of dementia.
+</p><p>
+Ultimately, the path to effective new treatments for dementia is through increased research funding and increased participation in clinical studies. Right now, volunteers are urgently needed to participate in clinical studies and trials about Alzheimer's and other dementias.
+</p>
+<br>
+<hr style="height:2px;border-width:0;color:white;background-color:white">
+</div>
+<div id="risk">
+<br>
+
+<h1>Dementia risk and prevention</h1><br>
+<p>
+Some risk factors for dementia, such as age and genetics, cannot be changed. But researchers continue to explore the impact of other risk factors on brain health and prevention of dementia.
+</p><p>
+Research reported at the 2019 Alzheimer’s Association International Conference® suggests that adopting multiple healthy lifestyle choices, including healthy diet, not smoking, regular exercise and cognitive stimulation, may decrease the risk of cognitive decline and dementia.
+</p>
+<br>
+<hr style="height:2px;border-width:0;color:white;background-color:white">
+</div>
+<br>
+<h2>
+    Contact-Us  |   <a href = "https://act.alz.org/site/Donation2?df_id=32112&32112.donation=form1&_ga=2.227548446.2056018731.1590345788-327380466.1590345788&utm_expid=.7rE0GMYjRJCOqqMYgv9Lfg.0&utm_referrer=https%3A%2F%2Fwww.alz.org%2F"
+    > Donate </a> 
+    <br><br>
+    225 N. Michigan Ave. Floor 17 Chicago, IL 60601<br>
+    
+</h2>
+<br><br>
+
+</body>
+</html>
+
