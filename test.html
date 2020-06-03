@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<title>Test</title>
+		<link rel="stylesheet" type="text/CSS" href="{{ url_for('static',filename='testStylesheet.css') }}">
+	</head>
+	
+	<body>
+		<ul>
+			<li><a class="active" href="/home"> Alzentia </a></li>
+			<li><a href="/home#sym"> Symptoms </a></li>
+			<li><a href="/home#cau"> Causes </a></li>
+			<li><a href="/home#diag"> Diagnosis </a></li>
+			<li><a href="/home#care"> Treatment </a></li>
+			<li><a href="/home#risk"> Prevention </a></li>
+			<li><a href="/test"> Dementia Predictor </a></li>
+		  </ul>
+
+		  
+
+
+
+		<div class="Title">
+			<h1>Do you have Dementia?</h1>
+			<h2>Fill in the form below for predicting your chances of being demented. </h2>
+		</div>
+		
+		<div class="Form">
+			<form method="POST" action="#">
+				{{ form.hidden_tag() }}
+				{{ form.Name(class="form-control") }}
+					<br/>
+				{{ form.Email(class="form-control") }}
+				<br/>
+				{{ form.Gender }}<br/>	
+				{{ form.Age(class="form-control") }}<br>
+				{{ form.YoE(class="form-control") }}<br/>
+				{{ form.SES }}<br/>
+				{{ form.MMSE(class="form-control") }}<br/>
+				{{ form.CDR }}<br/>
+				{{ form.eTIV(class="form-control") }}<br/>
+				{{ form.ASF(class="form-control") }}<br/>
+				{{ form.nWBV(class="form-control") }}<br/>
+				
+				{{ form.submit(class="form-control submit")}}<br/>
+			</form>
+		</div>
+	
+	</body>
+	
+</html>
